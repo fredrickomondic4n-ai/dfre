@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serve Rush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">T</span>
+          <div>
+            <p class="eyebrow">Arcade prime</p>
+            <h1>Serve Rush</h1>
+          </div>
+        </div>
+        <button id="resetButton" class="ghost-button">New Match</button>
+      </header>
+
+      <main class="game-panel">
+        <section class="scoreboard">
+          <div class="player-card player-left">
+            <span class="player-name">You</span>
+            <strong id="leftScore">0</strong>
+          </div>
+          <div class="divider">VS</div>
+          <div class="player-card player-right">
+            <span class="player-name">CPU</span>
+            <strong id="rightScore">0</strong>
+          </div>
+        </section>
+
+        <div class="canvas-wrap">
+          <canvas id="gameCanvas" width="960" height="540" aria-label="Tennis pong game"></canvas>
+          <div class="overlay" id="overlay">
+            <div class="overlay-card">
+              <p class="eyebrow light">Neon Court</p>
+              <h2 id="overlayTitle">Ready to serve?</h2>
+              <p id="overlayText">Press Space or tap start to begin.</p>
+              <button id="startButton">Start Match</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
